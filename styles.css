@@ -118,15 +118,6 @@ a:hover {
     margin-bottom: 24px;
 }
 
-.about-photo {
-    width: 240px;
-    height: 300px;
-    object-fit: cover;
-    border: 5px solid var(--border);
-    margin-bottom: 20px;
-    display: block;
-}
-
 .tagline {
     font-size: 1.2em;
     font-weight: 700;
@@ -275,8 +266,7 @@ footer p {
         flex: 1 1 100%;
     }
 
-    .profile-photo,
-    .about-photo {
+    .profile-photo {
         width: 180px;
         height: 230px;
     }
