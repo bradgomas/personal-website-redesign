@@ -322,38 +322,44 @@ footer p {
     }
 
     .profile-photo {
-    /* --- New Styles for JavaScript Features --- */
-.card {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        width: 180px;
+        height: 230px;
+    }
 }
 
+/* --- New Styles for JavaScript Features --- */
 .hidden {
     display: none;
 }
 
 .button-group button {
-    margin-right: 5px;
-    padding: 5px 10px;
+    margin-right: 8px;
+    padding: 8px 14px;
+    background-color: var(--surface-hover);
+    color: var(--heading);
+    border: 1px solid var(--border);
     cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.button-group button:hover {
+    border-color: var(--accent);
 }
 
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    background-color: var(--bg);
+    color: var(--heading);
+    border: 1px solid var(--border);
     border-radius: 4px;
+    font-family: inherit;
     resize: vertical;
 }
 
 .counter-text {
     font-size: 0.9rem;
-    color: #666;
-}
-        width: 180px;
-        height: 230px;
-    }
+    color: var(--text);
+    margin-top: 8px;
 }
