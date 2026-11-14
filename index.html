@@ -16,6 +16,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#js-features">Features</a></li>
             </ul>
         </nav>
     </header>
@@ -24,6 +25,9 @@
         <section id="home" class="hero">
             <img src="1000351770.jpg" alt="Brad Gomas" class="profile-photo">
             
+            <!-- Feature 1: Time-Based Welcome Message -->
+            <p id="welcome-message" class="tagline"></p>
+
             <h1>Brad Gomas</h1>
             <p class="tagline">18-Year-Old Student at TAMCC &bull; St. David, Grenada</p>
             <p class="intro">Hi, I'm Brad. Welcome to my personal website showcasing my coursework, software projects,
@@ -100,7 +104,48 @@
                 <li>GitHub: <a href="https://github.com/bradgomas" target="_blank"
                         rel="noopener">github.com/bradgomas</a></li>
             </ul>
-            
+        </section>
+
+        <section id="js-features">
+            <h2>Interactive Features</h2>
+            <div class="projects">
+                <!-- Feature 2: Digital Clock & Date Display -->
+                <div class="card">
+                    <h3>Current Date &amp; Time</h3>
+                    <p id="current-date"></p>
+                    <p id="digital-clock" class="tagline"></p>
+                </div>
+
+                <!-- Feature 3: Show / Hide Content -->
+                <div class="card">
+                    <h3>More About Me</h3>
+                    <p>Click below to read more about my background and goals.</p>
+                    <button id="toggle-btn" class="button">Read More</button>
+                    <p id="extra-content" class="hidden" style="margin-top: 16px;">
+                        I am an Information Technology student focusing on web development, programming, and cybersecurity.
+                    </p>
+                </div>
+
+                <!-- Feature 4: Paragraph Background Color -->
+                <div class="card">
+                    <h3>Paragraph Color Changer</h3>
+                    <p id="color-paragraph">Click a button below to change my background color!</p>
+                    <div class="button-group">
+                        <button type="button" onclick="changeParagraphColor('#1e4d47')">Teal</button>
+                        <button type="button" onclick="changeParagraphColor('#1e3a5f')">Blue</button>
+                        <button type="button" onclick="changeParagraphColor('#4a3b18')">Gold</button>
+                        <button type="button" onclick="changeParagraphColor('transparent')">Reset</button>
+                    </div>
+                </div>
+
+                <!-- Feature 5: Character Counter -->
+                <div class="card">
+                    <h3>Quick Note / Feedback</h3>
+                    <textarea id="message-box" placeholder="Type a message..." rows="4" maxlength="150"></textarea>
+                    <p class="counter-text">Characters remaining: <span id="char-count">150</span></p>
+                </div>
+            </div>
+
             <!-- Back to Top Button -->
             <div class="back-to-top">
                 <a href="#top" class="button">&uarr; Back to Top</a>
@@ -112,7 +157,7 @@
         <p>&copy; 2026 Brad Gomas &bull; Built with HTML5 and CSS3 &bull; Published with GitHub Pages</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
