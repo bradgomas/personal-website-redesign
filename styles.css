@@ -322,6 +322,37 @@ footer p {
     }
 
     .profile-photo {
+    /* --- New Styles for JavaScript Features --- */
+.card {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.button-group button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.counter-text {
+    font-size: 0.9rem;
+    color: #666;
+}
         width: 180px;
         height: 230px;
     }
